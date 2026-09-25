@@ -1,0 +1,7 @@
+let categoria_producto = document.getElementById("categoria_producto")
+let codigo_producto = document.getElementById("codigo_producto")
+let nombre_producto = document.getElementById("nombre_producto")
+let descripcion_producto = document.getElementById("descripcion_producto")
+let cantidad_producto = document.getElementById("cantidad_producto")
+let precio_producto = document.getElementById("precio_producto")
+let proveedor_producto = document.getElementById("proveedor_producto")

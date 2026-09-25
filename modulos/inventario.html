@@ -14,70 +14,19 @@
         <p class="title is-3 has-text-centered">Registrar Inventario</p>
         <hr class="has-background-primary-light">
 
-        <div class="field">
-            <label class="label">Nombre</label>
-            <div class="control">
-                <input id="nombre" class="input has-background-primary-light" type="text"
-                    placeholder="Ingrese su Nombre">
-            </div>
-        </div>
+
 
         <div class="field">
-            <label class="label">Apellidos</label>
-            <div class="control">
-                <input id="apellidos" class="input has-background-primary-light" type="text"
-                    placeholder="Ingrese su Apellido">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Tipo de Documento</label>
+            <label class="label">Categoria Producto</label>
             <div class="control">
                 <div class="select">
-                    <select id="tipo_documento">
-                        <option selected>Seleccione un tipo de Documento</option>
-                        <option value="Tarjeta_Identidad">Tarjeta de Identidad</option>
-                        <option value="Cedula_Ciudadania">cedula de CUidadania</option>
-                        <option value="Pasaporte">Pasaporte</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Numero de Documento</label>
-            <div class="control">
-                <input id="numero_documento" class="input has-background-warning-light" type="int"
-                    placeholder="Ingrese su Numero de Documento">
-            </div>
-        </div>
-
-        <div class="field">
-            <div class="control">
-                <label class="label">Genero</label>
-                <label class="radio">
-                    <input type="radio" name="genero" value="Femenino">
-                    Femenino
-                </label>
-                <label class="radio">
-                    <input type="radio" name="genero" value="Masculino">
-                    Masculino
-                </label>
-            </div>
-        </div>
-
-
-        <div class="field">
-            <label class="label">Colegio</label>
-            <div class="control">
-                <div class="select">
-                    <select id="colegio">
-                        <option selected>Seleccione un Colegio</option>
-                        <option value="San_Jorge">San jorge</option>
-                        <option value="Santo_Domingo">Santo Domingo</option>
-                        <option value="Estambul">Estambul</option>
-                        <option value="La_Sultana">La sultana</option>
-                        <option value="Malhabar">Malhabar</option>
+                    <select id="categoria">
+                        <option selected>Seleccione una Categoria</option>
+                        <option value="Alimentos">Alimentos </option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="Limpieza">Limpieza</option>
+                        <option value="Higiene_Personal">Higiene Personal</option>
+                        <option value="otros">Otros</option>
                     </select>
                 </div>
             </div>
@@ -85,54 +34,42 @@
 
 
         <div class="field">
-            <label class="label">Correo Institucional</label>
+            <label class="label">Codigo Producto</label>
             <div class="control">
-                <input id="correo_institucional" class="input has-background-primary-light" type="email"
-                    placeholder="Ingrese su Correo Institucional">
+                <input id="codigo_producto" class="input has-background-primary-light" type="text"
+                    placeholder="Ingrese el codigo del producto">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Nombre Producto</label>
+            <div class="control">
+                <input id="nombre_producto" class="input has-background-primary-light" type="text"
+                    placeholder="Ingrese el nombre del producto">
             </div>
         </div>
 
         <div class="field">
-            <label class="label">Fecha Nacimiento</label>
+            <label class="label">Descripcion Producto</label>
             <div class="control">
-                <input id="fecha_nacimiento" class="input has-background-primary-light" type="date"
-                    placeholder="Ingrese su Fecha de Nacimiento">
+                <input id="descripcion_producto" class="input has-background-primary-light" type="text"
+                    placeholder="Ingrese la descripcion del producto">
             </div>
         </div>
-
+        <div class="field"></div>
+        <label class="label">Precio Unitario</label>
+        <div class="control">
+            <input id="precio_unitario" class="input has-background-primary-light" type="text"
+                placeholder="Ingrese el precio unitario del producto">
+        </div>
         <div class="field">
-            <label class="label">Numero de Telefono</label>
+            <label class="label">Proveedor</label>
             <div class="control">
-                <input id="numero_telefono" class="input has-background-primary-light" type="tel"
-                    placeholder="Ingrese su Numero de Telefono">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Dirreccion</label>
-            <div class="control">
-                <input id="direccion" class="input has-background-primary-light" type="text"
-                    placeholder="Ingrese su Direccion">
+                <input id="proveedor" class="input has-background-primary-light" type="text"
+                    placeholder="Ingrese el proveedor del producto">
             </div>
         </div>
 
 
-        <div class="field">
-            <label class="label">Tipo de Sangre</label>
-            <div class="control">
-                <div class="select">
-                    <select id="tipo_sangre">
-                        <option selected>Seleccione un Tipo de Sangre</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
         <hr class="has-background-primary-light">
 
@@ -155,17 +92,17 @@
 
 
 
-Categoria Producto - 
-    Lista Deplegable (
-        Alimentos - 
-        Bebidas - 
-        Limpieza - 
-        Higiene Personal - 
-        Otros
-    )
+<!-- Categoria Producto -
+Lista Deplegable (
+Alimentos -
+Bebidas -
+Limpieza -
+Higiene Personal -
+Otros
+)
 Codigo Producto - Input
 Nombre del Producto - Input
 Descrpcion del Producto - Input
 Cantidad del Producto - Input
 Precio Unitario - Input
-Proveedor - Input
+Proveedor - Input -->
